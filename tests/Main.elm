@@ -6,6 +6,7 @@ import Json.Encode exposing (Value)
 
 import Expression
 import Statement
+import Issues
 
 main : Program Value
 main =
@@ -17,4 +18,5 @@ all : Test
 all =
    describe "Ast suite" [ Expression.all
                         , Statement.all
+                        , Issues.all
                         ]
